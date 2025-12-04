@@ -29,7 +29,8 @@
 
 @media (min-width: 992px) {
     .hero {
-        padding: 200px 0;
+        padding: 0 0 100px;
+        height: calc(100vh - 86px);
 
         .title {
             font-size: 58px;
