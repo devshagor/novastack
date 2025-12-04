@@ -1,6 +1,11 @@
+@import "@/styles/bootstrap-grid";
+@import "@/styles/header";
+
 :root {
+  --primary: #3161f2;
   --background: #ffffff;
   --foreground: #171717;
+  --white: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +22,7 @@ body {
 }
 
 body {
+  font-size: 16px;
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
@@ -33,10 +39,51 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: all ease 0.4s;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  preset custom classes
+*/
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.btn {
+  padding: 10px 15px;
+  background: var(--foreground);
+  color: var(--white);
+  border-radius: 6px;
+  display: inline-block;
+  border: 1px solid var(--foreground);
+  
+  &:hover {
+    border-color: var(--primary);
+    background: var(--primary);
   }
 }
