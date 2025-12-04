@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function SocialIcons() {
+export default function SocialMedia() {
     return (
         <div className="social-icons">
             {/* facebook */}
