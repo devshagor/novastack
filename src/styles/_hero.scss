@@ -1,0 +1,46 @@
+.hero {
+    padding: 100px 0;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+
+    .content-wrap {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 12px;
+    }
+
+    .title {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        max-width: 700px;
+        margin: 0 auto 30px;
+    }
+
+    .btn {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero {
+        padding: 200px 0;
+
+        .title {
+            font-size: 58px;
+        }
+
+        .description {
+            font-size: 20px;
+        }
+
+        .btn {
+            margin-bottom: 0;
+        }
+    }
+}

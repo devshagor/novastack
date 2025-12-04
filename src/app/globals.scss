@@ -1,5 +1,6 @@
 @import "@/styles/bootstrap-grid";
 @import "@/styles/header";
+@import "@/styles/hero";
 @import "@/styles/social-icons";
 @import "@/styles/footer";
 
@@ -83,9 +84,23 @@ li {
   border-radius: 6px;
   display: inline-block;
   border: 1px solid var(--foreground);
-  
+
   &:hover {
-    border-color: var(--primary);
-    background: var(--primary);
+    background: transparent;
+    color: var(--foreground);
   }
-}
+
+  +.btn {
+    margin-left: 10px;
+  }
+
+  &.btn-secondary {
+    background: transparent;
+    color: var(--foreground);
+    border-color: var(--foreground);
+    &:hover {
+      background: var(--foreground);
+      color: var(--white);
+    }
+  }
+} 
