@@ -1,5 +1,7 @@
 @import "@/styles/bootstrap-grid";
 @import "@/styles/header";
+@import "@/styles/social-icons";
+@import "@/styles/footer";
 
 :root {
   --primary: #3161f2;
@@ -75,7 +77,7 @@ li {
 }
 
 .btn {
-  padding: 10px 15px;
+  padding: 10px 25px;
   background: var(--foreground);
   color: var(--white);
   border-radius: 6px;
