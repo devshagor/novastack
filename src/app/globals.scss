@@ -3,6 +3,7 @@
 @import "@/styles/hero";
 @import "@/styles/social-icons";
 @import "@/styles/footer";
+@import "@/styles/service";
 
 :root {
   --primary: #3161f2;
@@ -98,9 +99,33 @@ li {
     background: transparent;
     color: var(--foreground);
     border-color: var(--foreground);
+
     &:hover {
       background: var(--foreground);
       color: var(--white);
     }
   }
-} 
+}
+
+// Section Common styles
+.section-padding {
+  padding: 50px 0;
+
+  @media (min-width: 992px) {
+    padding: 100px 0;
+  }
+}
+
+.section-heading {
+  padding-bottom: 30px;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
