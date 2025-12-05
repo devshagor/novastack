@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Hero from "@/components/Hero";
 import Feature from "@/components/Service";
 import Testimonial from "@/components/Testimonial";
+import Cta from "@/components/Cta";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Feature />
       <Testimonial />
+      <Cta />
     </div>
   );
 }

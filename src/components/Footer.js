@@ -3,7 +3,7 @@ import SocialMedia from "@/components/SocialMedia";
 
 export default function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer section-padding">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-6 text-center">
