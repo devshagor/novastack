@@ -7,8 +7,9 @@ export default function service() {
                 <div className="row text-center justify-content-center">
                     <div className="col-md-8">
                         <div className="section-heading">
+                            <span>Service</span>
                             <h2>Everything You Need to Succeed Online</h2>
-                            <p>From development to marketing, we provide comprehensive digital solutions that drive real results</p>
+                            <p>It is a long established fact that a reader will be distracted by the readable <br></br> content of a page when looking at its layout. </p>
                         </div>
                     </div>
                 </div>

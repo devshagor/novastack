@@ -4,6 +4,7 @@
 @import "@/styles/social-icons";
 @import "@/styles/footer";
 @import "@/styles/service";
+@import "@/styles/testimonial";
 
 :root {
   --primary: #3161f2;
@@ -118,6 +119,17 @@ li {
 
 .section-heading {
   padding-bottom: 30px;
+
+  span {
+    border: 1px solid #999;
+    padding: 10px 15px;
+    font-size: 18px;
+    line-height: .8;
+    font-weight: 400;
+    border-radius: 25px;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
 
   h2 {
     font-size: 36px;
