@@ -1,6 +1,6 @@
 import Banner from "@/components/Banner";
 import Story from "@/components/Story";
-
+import Team from "@/components/Team";
 
 export const metadata = {
     title: "About Us",
@@ -12,6 +12,7 @@ export default function About() {
         <div className="page">
             <Banner />
             <Story />
+            <Team />
         </div>
     );
 }
