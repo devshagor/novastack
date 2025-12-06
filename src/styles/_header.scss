@@ -1,6 +1,73 @@
 .header {
     padding: 20px 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    position: relative;
+
+    .menu-toggle {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        &::after,
+        &::before,
+        span {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            left: 4px;
+            background: currentcolor;
+            transition: 0.2s;
+            border-radius: 3px;
+        }
+
+        &::before {
+            top: 8px;
+        }
+
+        &::after {
+            bottom: 8px;
+        }
+
+        &>span {
+            top: 50%;
+            margin-top: -1px;
+            width: 20px;
+        }
+
+        &.active {
+            &::before {
+                transform: rotate(45deg);
+                top: 15px;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                bottom: 15px;
+            }
+
+            span {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    .btn-cta {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: inline-block;
+        }
+    }
 }
 
 .site-logo {
@@ -10,22 +77,55 @@
 }
 
 .navbar {
+    position: absolute;
+    width: 100%;
+    top: 83px;
+    padding: 20px 0;
+    left: 0;
+    text-align: center;
+    background: var(--foreground);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+
+    @media (min-width: 768px) {
+        opacity: 1;
+        position: static;
+        visibility: visible;
+        background: transparent;
+        padding: 0;
+    }
+
     ul {
         li {
             list-style: none;
-            display: inline-block;
-            padding: 0 15px;
+
+            @media (min-width: 768px) {
+                display: inline-block;
+            }
 
             a {
                 font-size: 16px;
                 font-weight: 500;
-                color: var(--foreground);
-                display: inline-block;
+                color: var(--background);
+                display: block;
+                padding: 15px;
 
                 &:hover {
                     color: var(--primary);
                 }
+
+                @media (min-width: 768px) {
+                    color: var(--foreground);
+                    padding: 0px 15px;
+                    display: inline-block;
+                }
             }
         }
+    }
+
+    .open & {
+        opacity: 1;
+        visibility: visible;
     }
 }
