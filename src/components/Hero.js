@@ -10,8 +10,8 @@ export default function Hero() {
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
                     </p>
                     <div className="dual-btn">
-                        <Link href="/" className="btn btn-primary">Join the Waitlist</Link>
-                        <Link href="/" className="btn btn-secondary">Explore More Features</Link>
+                        <Link href="/contact" className="btn btn-primary">Join the Waitlist</Link>
+                        <Link href="/contact" className="btn btn-secondary">Explore More Features</Link>
                     </div>
                 </div>
             </div>
