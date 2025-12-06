@@ -9,6 +9,7 @@
 @use "@/styles/banner";
 @use "@/styles/story";
 @use "@/styles/team";
+@use "@/styles/contact";
 
 :root {
   --primary: #3161f2;
@@ -75,6 +76,10 @@ li {
   justify-content: center;
 }
 
+.justify-content-between {
+  justify-content: space-between;
+}
+
 .text-center {
   text-align: center;
 }
@@ -90,6 +95,7 @@ li {
   border-radius: 6px;
   display: inline-block;
   border: 1px solid var(--foreground);
+  transition: all ease 0.4s;
 
   &:hover {
     background: transparent;
@@ -148,4 +154,10 @@ li {
 
 .bg-gray {
   background: #f8f9fa;
+}
+
+.success {
+  color: green;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
