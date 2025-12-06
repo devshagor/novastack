@@ -1,9 +1,9 @@
-export default function Banner() {
+export default function Banner({title, description}) {
     return (
         <section className="banner section-padding">
             <div className="content">
-                <h1>About Us</h1>
-                <p>Novastack is a digital agency that helps businesses grow online.</p>
+                <h1>{title}</h1>
+                <p>{description}</p>
             </div>
         </section>
     );

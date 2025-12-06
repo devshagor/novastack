@@ -13,7 +13,10 @@ export const metadata = {
 export default function About() {
     return (
         <div className="page">
-            <Banner />
+            <Banner 
+                title = "About Us"
+                description = "Novastack is a digital agency that helps businesses grow online."
+            />
             <Story />
             <Team />
             <Vision />
